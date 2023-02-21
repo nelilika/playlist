@@ -1,11 +1,15 @@
 /* Initial song list */
 let songs = [
   {
-    name: 'Jingle Bells',
+    name: 'Ластівки',
     isLiked: false,
   },
   {
-    name: 'We Wish You a Merry Christmas',
+    name: 'Сіґеле-міґеле',
+    isLiked: true,
+  },
+  {
+    name: 'Гарно так',
     isLiked: true,
   },
 ];
@@ -19,6 +23,7 @@ window.addEventListener('load', function () {
 function createBtn(btnName, btnClass, btnEvent) {
   const button = document.createElement('button');
   button.textContent = btnName;
+  button.classList.add('button');
   button.classList.add(btnClass);
   button.addEventListener('click', btnEvent);
   return button;
